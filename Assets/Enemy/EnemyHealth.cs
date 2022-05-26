@@ -40,4 +40,5 @@ public class EnemyHealth : MonoBehaviour
             enemy.RewardGold();
         }
     }
+    // finished
 }
