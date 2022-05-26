@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5100346723484795811}
   - component: {fileID: 7935128199451753193}
   - component: {fileID: 6861945619009937021}
+  - component: {fileID: 8805186371687923450}
+  - component: {fileID: 3684609014939035755}
   m_Layer: 0
   m_Name: RamMesh
   m_TagString: Untagged
@@ -83,6 +85,34 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8805186371687923450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4070758372805021848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 480eb4019a0f57444b3703c36957ec37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldReward: 25
+  goldPenalty: 25
+--- !u!114 &3684609014939035755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4070758372805021848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4e280518b1ebae49996a4e753395198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHitPoints: 5
+  difficultyRamp: 1
 --- !u!1 &5040643765344069697
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,9 +122,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5672325927823913723}
+  - component: {fileID: -3511051699664382735}
   - component: {fileID: -8789414288683993735}
   - component: {fileID: -5383627138156016411}
-  - component: {fileID: -3511051699664382735}
   m_Layer: 0
   m_Name: Ram
   m_TagString: Untagged
@@ -118,6 +148,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3511051699664382735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5040643765344069697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4e280518b1ebae49996a4e753395198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHitPoints: 5
+  difficultyRamp: 1
 --- !u!114 &-8789414288683993735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,17 +190,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goldReward: 25
   goldPenalty: 25
---- !u!114 &-3511051699664382735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5040643765344069697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4e280518b1ebae49996a4e753395198, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHitPoints: 5
-  difficultyRamp: 1
